@@ -1,0 +1,20 @@
+<div>
+  <h1 class="red">{{ componentName }}</h1>
+  <input
+    type="text"
+    class="form-control"
+    (input)="getItem($event)"
+    [value]="item"
+    />
+    <!-- 
+    () event binding
+     [] data binding
+    
+    -->
+  <button [disabled]="btnDisabled" class="btn btn-success w-100">Add</button>
+  <h3>{{ showText }}</h3>
+  <ul class="list-group">
+    <li class="list-item-group">Item1</li>
+  </ul>
+</div>
+
